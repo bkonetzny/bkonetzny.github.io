@@ -63,6 +63,8 @@ body {
   cursor: pointer;
   border: 2px solid transparent;
   transition: .3s ease;
+  color: black;
+  outline: none;
 }
 .cards .card-toggle.active {
   color: white;
@@ -178,14 +180,24 @@ body {
   background-size: contain;
 }
 
-.cards #linkedin .card-content {
-  background-color: rgb(25, 133, 188);
+.cards #drupal .card-content {
+  background-color: rgb(15, 125, 194);
   -webkit-clip-path: circle(0% at 150px 88%);
   clip-path: circle(0% at 150px 88%);
 }
-.cards #linkedin.active .card-content {
+.cards #drupal.active .card-content {
   -webkit-clip-path: circle(270% at 150px 88%);
   clip-path: circle(270% at 150px 88%);
+}
+
+.cards #linkedin .card-content {
+  background-color: rgb(25, 133, 188);
+  -webkit-clip-path: circle(0% at 220px 88%);
+  clip-path: circle(0% at 220px 88%);
+}
+.cards #linkedin.active .card-content {
+  -webkit-clip-path: circle(270% at 220px 88%);
+  clip-path: circle(270% at 220px 88%);
 }
 .cards #linkedin .right {
   background: url(../images/linkedin.png) no-repeat bottom right;
@@ -194,12 +206,12 @@ body {
 
 .cards #twitter .card-content {
   background-color: rgb(51, 161, 194);
-  -webkit-clip-path: circle(0% at 220px 88%);
-  clip-path: circle(0% at 220px 88%);
+  -webkit-clip-path: circle(0% at 290px 88%);
+  clip-path: circle(0% at 290px 88%);
 }
 .cards #twitter.active .card-content {
-  -webkit-clip-path: circle(270% at 220px 88%);
-  clip-path: circle(270% at 220px 88%);
+  -webkit-clip-path: circle(270% at 290px 88%);
+  clip-path: circle(270% at 290px 88%);
 }
 
 @media (min-device-width: 768px) {
