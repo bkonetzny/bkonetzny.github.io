@@ -11,6 +11,11 @@ $(document).ready(function(){
 
       $('.card').removeClass('active');
 
+      // track card cchange as pageview
+      if (window.ga) {
+        window.ga('send', 'pageview', '/' + window.location.hash);
+      }
+
       setTimeout(function(){
         $card.toggleClass('active').find('.card-content').on('transitionend', function(){
           isAnimating = false;
@@ -27,9 +32,9 @@ $(document).ready(function(){
     showCard(card);
   };
 
-  parseHash(location.hash);
+  parseHash(window.location.hash);
 
   $(window).bind('hashchange', function() {
-    parseHash(location.hash);
+    parseHash(window.location.hash);
   });
 });
